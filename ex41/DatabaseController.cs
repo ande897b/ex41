@@ -13,7 +13,6 @@ namespace ex41
         private static string connectionString = "Server=EALSQL1.eal.local; Database= C_DB01_2018; User Id= C_STUDENT01; Password= C_OPENDB01";
         public void InsertPet(string petName, string petType, string petBreed, string petDOB, string petWeight, string ownerID)
         {
-
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 try
@@ -60,7 +59,6 @@ namespace ex41
                             string ownerID = reader["ownerID"].ToString();
 
                             Console.WriteLine(petName + " " + petType + " " + petBreed + " " + petDOB + " " + petWeight + " " + ownerID);
-
                         }
                     }
                 }
