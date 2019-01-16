@@ -12,9 +12,6 @@ namespace ex41
         {
             Menu menu = new Menu();
             menu.Run();
-
-
-
         }
     }
 }
